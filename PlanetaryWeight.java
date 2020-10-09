@@ -17,22 +17,22 @@ public class PlanetaryWeight extends JFrame {
 
 	public static void main(String[] args) {
 	    Scanner input = new Scanner(System.in);
-	    System.out.println("Please your weight on Earth.");
-	    final double weight = input.nextDouble();
+	    System.out.println("Please your Earth weight: ");
+	    final double eWeight = input.nextDouble();
 	    
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PlanetaryWeight frame = new PlanetaryWeight(weight);
+					PlanetaryWeight frame = new PlanetaryWeight(eWeight);
 					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
+				} catch (Exception ex) {
+					ex.getMessage();
 				}
 			}
 		});
 	}
 
-	public PlanetaryWeight(double weight) {
+	public PlanetaryWeight(double eWeight) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -83,7 +83,7 @@ public class PlanetaryWeight extends JFrame {
 					conF = 1.13;
 				    break;
 				}
-				lblNewLabel_OutputWeight.setText("Your weight on " + planet + " is " + (int)(weight * conF * 100) / 100.0 + " kg.");
+				lblNewLabel_OutputWeight.setText("Your weight on " + planet + " is " + (int)(eWeight * conF * 100) / 100.0 + " kg.");
 			}
 		});
 	}
