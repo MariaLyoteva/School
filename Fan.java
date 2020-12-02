@@ -8,6 +8,10 @@ public class Fan {
 	private boolean switchedOn = false;
 	private double radius = 5.0;
 	private String colour = "blue";
+	
+	Fan() {
+		
+	}
 	void setSpeed(int newSpeed) {
 		this.speed = newSpeed;
 	}
@@ -40,9 +44,6 @@ public class Fan {
 		}else {
 			return ("Its switched off. Radius is " + radius1 + ". Colour is " + colour); 
 		}
-	}
-	Fan(){
-	
 	}
 	
 }
