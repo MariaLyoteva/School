@@ -8,21 +8,21 @@ public class RegularPolygon {
 	RegularPolygon() {
 		
 	}
-	RegularPolygon(int str, int dylv){
+	RegularPolygon(int str, int dylj){
 		this.brojStrani = str;
-		this.dyljinaStrana = dylv;
+		this.dyljinaStrana = dylj;
 	}
-	RegularPolygon(int str, int dylv, double xx, double yy) {
+	RegularPolygon(int str, int dylj, double xx, double yy) {
 		this.brojStrani = str;
-		this.dyljinaStrana = dylv;
+		this.dyljinaStrana = dylj;
 		this.y = yy;
 		this.x = xx;
 	}
 	void setBrojStrani(int newBrojStrani) {
 		this.brojStrani = newBrojStrani;
 	}
-	void setDyljinaStrana(int newDylvinaStrana) {
-		this.dyljinaStrana = newDylvinaStrana;
+	void setDyljinaStrana(int newDyljinaStrana) {
+		this.dyljinaStrana = newDyljinaStrana;
 	}
 	void setX(int xx) {
 		this.x = xx;
@@ -33,7 +33,7 @@ public class RegularPolygon {
 	int getBrojStrani() {
 		return this.brojStrani;
 	}
-	int getDylvinaStrana() {
+	int getDyljinaStrana() {
 		return this.dyljinaStrana;
 	}
 	double getX() {
